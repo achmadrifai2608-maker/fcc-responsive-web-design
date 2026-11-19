@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer Learning Experience Survey</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="intro">
+      <p class="eyebrow">freeCodeCamp &middot; Learner Research</p>
+      <h1 id="title">Developer Learning Experience Survey</h1>
+      <p id="description">
+        Help us understand how people learn web development so we can make the
+        journey clearer, kinder, and more practical. This survey takes about
+        3 minutes, and your answers stay anonymous.
+      </p>
+      <ul class="facts">
+        <li><strong>~3 min</strong><span>to complete</span></li>
+        <li><strong>Anonymous</strong><span>no account needed</span></li>
+        <li><strong>12 questions</strong><span>mostly multiple choice</span></li>
+      </ul>
+    </header>
+
+    <form id="survey-form" action="#" method="post">
+      <section class="card">
+        <h2>About you</h2>
+        <p class="card-note">We ask for a name and email only so we can follow up if you opt in — both stay private.</p>
+
+        <div class="field">
+          <label id="name-label" for="name">Full name</label>
+          <input id="name" name="name" type="text" placeholder="e.g. Alex Morgan" required>
+        </div>
+
+        <div class="field">
+          <label id="email-label" for="email">Email address</label>
+          <input id="email" name="email" type="email" placeholder="e.g. alex@example.com" required>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label id="number-label" for="number">Age <span class="optional">(optional)</span></label>
+            <input id="number" name="age" type="number" min="13" max="120" placeholder="e.g. 24">
+          </div>
+
+          <div class="field">
+            <label for="dropdown">Which option best describes your current role?</label>
+            <select id="dropdown" name="role">
+              <option value="" disabled selected>Select your current role</option>
+              <option value="student">Student</option>
+              <option value="full-time-job">Full-time Job</option>
+              <option value="full-time-learner">Full-time Learner</option>
+              <option value="prefer-not-to-say">Prefer not to say</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Your learning experience</h2>
+
+        <fieldset class="field">
+          <legend>Would you recommend freeCodeCamp to a friend?</legend>
+          <label class="choice">
+            <input type="radio" name="recommend" value="definitely" checked>
+            <span>Definitely — it is the first resource I suggest</span>
+          </label>
+          <label class="choice">
+            <input type="radio" name="recommend" value="maybe">
+            <span>Maybe — it depends on what they want to learn</span>
+          </label>
+          <label class="choice">
+            <input type="radio" name="recommend" value="not-sure">
+            <span>Not sure — I need more time with it first</span>
+          </label>
+        </fieldset>
+
+        <fieldset class="field">
+          <legend>What is your favorite feature of freeCodeCamp?</legend>
+          <label class="choice">
+            <input type="radio" name="favorite-feature" value="projects">
+            <span>Hands-on projects</span>
+          </label>
+          <label class="choice">
+            <input type="radio" name="favorite-feature" value="challenges">
+            <span>Step-by-step challenges</span>
+          </label>
+          <label class="choice">
+            <input type="radio" name="favorite-feature" value="community">
+            <span>The community forum</span>
+          </label>
+          <label class="choice">
+            <input type="radio" name="favorite-feature" value="certifications">
+            <span>Free certifications</span>
+          </label>
+        </fieldset>
+
+        <div class="field">
+          <label for="experience">How long have you been learning web development?</label>
+          <select id="experience" name="experience">
+            <option value="" disabled selected>Select a time range</option>
+            <option value="less-than-3-months">Less than 3 months</option>
+            <option value="3-6-months">3–6 months</option>
+            <option value="6-12-months">6–12 months</option>
+            <option value="1-2-years">1–2 years</option>
+            <option value="more-than-2-years">More than 2 years</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>What should we improve?</h2>
+        <p class="card-note">Check all that apply.</p>
+
+        <fieldset class="field checkboxes">
+          <legend class="visually-hidden">Areas to improve</legend>
+          <label class="choice">
+            <input type="checkbox" name="improve" value="front-end-projects">
+            <span>Front-end Projects</span>
+          </label>
+          <label class="choice">
+            <input type="checkbox" name="improve" value="back-end-projects">
+            <span>Back-end Projects</span>
+          </label>
+          <label class="choice">
+            <input type="checkbox" name="improve" value="data-visualization">
+            <span>Data Visualization</span>
+          </label>
+          <label class="choice">
+            <input type="checkbox" name="improve" value="challenges">
+            <span>Challenges</span>
+          </label>
+          <label class="choice">
+            <input type="checkbox" name="improve" value="open-source-community">
+            <span>Open Source Community</span>
+          </label>
+          <label class="choice">
+            <input type="checkbox" name="improve" value="gitter-help-rooms">
+            <span>Gitter Help Rooms</span>
+          </label>
+          <label class="choice">
+            <input type="checkbox" name="improve" value="videos">
+            <span>Videos</span>
+          </label>
+          <label class="choice">
+            <input type="checkbox" name="improve" value="city-meetups">
+            <span>City Meetups</span>
+          </label>
+          <label class="choice">
+            <input type="checkbox" name="improve" value="wiki">
+            <span>Wiki</span>
+          </label>
+          <label class="choice">
+            <input type="checkbox" name="improve" value="forum">
+            <span>Forum</span>
+          </label>
+          <label class="choice">
+            <input type="checkbox" name="improve" value="additional-courses">
+            <span>Additional Courses</span>
+          </label>
+        </fieldset>
+
+        <div class="field">
+          <label for="comments">Any comments or suggestions?</label>
+          <textarea id="comments" name="comments" rows="5" placeholder="Tell us what helped you most, what confused you, or what you would love to see next…"></textarea>
+        </div>
+      </section>
+
+      <button id="submit" type="submit">Submit survey</button>
+      <p class="privacy">By submitting, you agree that your anonymous answers may be used to improve freeCodeCamp's curriculum.</p>
+    </form>
+
+    <footer class="page-footer">
+      <p>Thank you for helping the next generation of developers learn to code.</p>
+    </footer>
+  </main>
+</body>
+</html>
